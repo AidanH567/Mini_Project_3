@@ -5,9 +5,10 @@ const sequelizeInstance = dbConnect.Sequelize;
 
 class Comment extends Model {}
 
+// Sequelize will create this table if it doesn't exist on startup
 Comment.init(
   {
-    commentId: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       autoIncrement: true,
@@ -16,34 +17,27 @@ Comment.init(
     postId: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      required: true,
     },
     userId: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      required: true,
     },
     content: {
       type: DataTypes.STRING,
       allowNull: false,
-      required: true,
     },
     createdAt: {
-      type: DataTypes.TIMESTAMP,
+      type: DataTypes.DATE, // This is the correct datatype for createdAt
       allowNull: false,
-      defaultValue: DataTypes.NOW,
+      defaultValue: DataTypes.NOW, // This is typically how you would handle automatic timestamps
     },
   },
   {
     sequelize: sequelizeInstance,
-    modelName: "comments", // lowercase plural format
-    timestamps: false, // we're manually handling `createdAt`
+    modelName: "comments",
+    timestamps: false, // Optionally false if you are managing `createdAt` manually
     freezeTableName: true,
   }
 );
-
-// Establish relationships (assuming you have Post and User models already defined)
-Comment.belongsTo(User, { foreignKey: "userId" }); // A Comment belongs to a User
-Comment.belongsTo(Post, { foreignKey: "postId" }); // A Comment belongs to a Post
 
 module.exports = Comment;

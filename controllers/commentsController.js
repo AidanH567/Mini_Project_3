@@ -28,7 +28,8 @@ const createComment = (data, res) => {
 // Uses JSON from request body to update Comment ID from params
 const updateComment = (req, res) => {
   Models.Comment.update(req.body, {
-    where: { id: req.params.id },
+    where: { commentId: req.params.id },
+    // returning: true, // Uncomment if you want to return updated data
   })
     .then((data) => {
       res.send({ result: 200, data: data });
@@ -41,7 +42,7 @@ const updateComment = (req, res) => {
 
 // Deletes Comment matching ID from params
 const deleteComment = (req, res) => {
-  Models.Comment.destroy({ where: { id: req.params.id } })
+  Models.Comment.destroy({ where: { commentId: req.params.id } })
     .then((data) => {
       res.send({ result: 200, data: data });
     })

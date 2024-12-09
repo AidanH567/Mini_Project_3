@@ -5,6 +5,9 @@ const sequelizeInstance = dbConnect.Sequelize;
 
 class Like extends Model {}
 
+const User = require("./user");
+const Post = require("./posts");
+
 // Sequelize will create this table if it doesn't exist on startup
 Like.init(
   {
@@ -25,7 +28,7 @@ Like.init(
       required: true,
     },
     createdAt: {
-      type: DataTypes.TIMESTAMP,
+      type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
