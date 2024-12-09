@@ -16,31 +16,27 @@ User.init(
     },
     firstName: {
       type: DataTypes.STRING,
-      allowNull: false,
-      required: true,
+      allowNull: false, // Ensures first name is required
     },
     lastName: {
       type: DataTypes.STRING,
-      allowNull: false,
-      required: true,
+      allowNull: false, // Ensures last name is required
     },
     emailId: {
       type: DataTypes.STRING,
-      allowNull: false,
-      required: true,
-      unique: true,
+      allowNull: false, // Ensures email is required
+      unique: true, // Enforces unique constraint
     },
     password: {
       type: DataTypes.STRING,
-      allowNull: false,
-      required: true,
+      allowNull: false, // Ensures password is required
     },
   },
   {
     sequelize: sequelizeInstance,
-    modelName: "users", // use lowercase plural format
-    timestamps: true,
-    freezeTableName: true,
+    modelName: "users", // Use lowercase plural format
+    timestamps: true, // Automatically adds createdAt and updatedAt columns
+    freezeTableName: true, // Prevents Sequelize from pluralizing the table name
   }
 );
 

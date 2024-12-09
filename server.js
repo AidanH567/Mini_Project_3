@@ -6,14 +6,22 @@ let dbConnect = require("./dbConnect");
 // parse requests of content-type - application/json
 app.use(express.json());
 
+// Import the routes
 let userRoutes = require("./routes/userRoutes");
 app.use("/api/users", userRoutes);
 
 let postsRoutes = require("./routes/postsRoutes.js");
 app.use("/api/posts", postsRoutes);
 
+// Add routes for likes and comments
+let likesRoutes = require("./routes/likesRoutes.js");
+app.use("/api/likes", likesRoutes);
+
+let commentsRoutes = require("./routes/commentsRoutes.js");
+app.use("/api/comments", commentsRoutes);
+
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to my MongoDB application." });
+  res.json({ message: "Welcome to my Blogging API application." });
 });
 
 // set port, listen for requests
