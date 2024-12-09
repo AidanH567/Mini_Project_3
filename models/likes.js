@@ -3,12 +3,12 @@ let dbConnect = require("../dbConnect");
 
 const sequelizeInstance = dbConnect.Sequelize;
 
-class Like extends Model {}
-
+// Import models after Sequelize instance is initialized
 const User = require("./user");
 const Post = require("./posts");
 
-// Sequelize will create this table if it doesn't exist on startup
+class Like extends Model {}
+
 Like.init(
   {
     likeId: {
@@ -19,13 +19,11 @@ Like.init(
     },
     postId: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      required: true,
+      allowNull: false, // Makes postId required
     },
     userId: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      required: true,
+      allowNull: false, // Makes userId required
     },
     createdAt: {
       type: DataTypes.DATE,
@@ -35,14 +33,14 @@ Like.init(
   },
   {
     sequelize: sequelizeInstance,
-    modelName: "likes", // use lowercase plural format
-    timestamps: false, // we're manually handling `createdAt`
-    freezeTableName: true,
+    modelName: "likes", // Table name in lowercase plural format
+    timestamps: false, // We are manually handling `createdAt`
+    freezeTableName: true, // Prevents Sequelize from pluralizing table name
   }
 );
 
-// Establish relationships (assuming you have Post and User models already defined)
-Like.belongsTo(User, { foreignKey: "userId" }); // A Like belongs to a User
-Like.belongsTo(Post, { foreignKey: "postId" }); // A Like belongs to a Post
+// Establish relationships after model initialization
+Like.belongsTo(User, { foreignKey: "userId" }); // Like belongs to User
+Like.belongsTo(Post, { foreignKey: "postId" }); // Like belongs to Post
 
 module.exports = Like;

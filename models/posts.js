@@ -1,6 +1,7 @@
 const { DataTypes, Model } = require("sequelize");
 let dbConnect = require("../dbConnect");
 const User = require("./user");
+const Like = require("./likes");
 
 const sequelizeInstance = dbConnect.Sequelize;
 
@@ -43,5 +44,7 @@ post.init(
 
 // Defining the relationship (Post belongs to User)
 post.belongsTo(User);
+
+post.hasMany(Like, { foreignKey: "postId", as: "likedPosts" });
 
 module.exports = post;
