@@ -1,9 +1,9 @@
 "use strict";
 
-const User = require("./user"); // Require the User model
-const Post = require("./posts"); // Require the Post model
-const Comment = require("./comments"); // Require the Comment model
-const Like = require("./likes"); // Require the Like model
+const User = require("./user");
+const Post = require("./posts");
+const Comment = require("./comments");
+const Like = require("./likes");
 
 // Define associations between models
 Post.belongsTo(User); // Each Post belongs to a single User
