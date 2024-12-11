@@ -1,13 +1,11 @@
 const { DataTypes, Model } = require("sequelize");
 let dbConnect = require("../dbConnect");
-const User = require("./user");
-const Like = require("./likes");
 
 const sequelizeInstance = dbConnect.Sequelize;
 
-class post extends Model {}
+class Post extends Model {}
 
-post.init(
+Post.init(
   {
     title: {
       type: DataTypes.STRING,
@@ -24,12 +22,8 @@ post.init(
     userId: {
       type: DataTypes.INTEGER,
       allowNull: false, // Ensures userId is required for the post
-      references: {
-        model: User,
-        key: "id",
-      },
     },
-    likes: {
+    likeCount: {
       type: DataTypes.INTEGER,
       defaultValue: 0, // Default value for likes is 0
     },
@@ -42,9 +36,4 @@ post.init(
   }
 );
 
-// Defining the relationship (Post belongs to User)
-post.belongsTo(User);
-
-post.hasMany(Like, { foreignKey: "postId", as: "likedPosts" });
-
-module.exports = post;
+module.exports = Post;

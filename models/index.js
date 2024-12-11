@@ -10,25 +10,25 @@ Post.belongsTo(User); // Each Post belongs to a single User
 User.hasMany(Post); // A User can have many Posts
 
 // Comments associations
-Comment.belongsTo(Post, { foreignKey: "postId" }); // Each Comment belongs to a Post
-Post.hasMany(Comment, { foreignKey: "postId" }); // A Post can have many Comments
+Comment.belongsTo(Post); // Each Comment belongs to a Post
+Post.hasMany(Comment); // A Post can have many Comments
 
-Comment.belongsTo(User, { foreignKey: "userId" }); // Each Comment belongs to a User
-User.hasMany(Comment, { foreignKey: "userId" }); // A User can have many Comments
+Comment.belongsTo(User); // Each Comment belongs to a User
+User.hasMany(Comment); // A User can have many Comments
 
 // Likes associations
-Like.belongsTo(Post, { foreignKey: "postId" }); // A Like belongs to a Post
-Post.hasMany(Like, { foreignKey: "postId" }); // A Post can have many Likes
+Like.belongsTo(Post); // A Like belongs to a Post
+Post.hasMany(Like); // A Post can have many Likes
 
-Like.belongsTo(User, { foreignKey: "userId" }); // A Like belongs to a User
-User.hasMany(Like, { foreignKey: "userId" }); // A User can have many Likes
+Like.belongsTo(User); // A Like belongs to a User
+User.hasMany(Like); // A User can have many Likes
 
 // Sync the models with the database
 async function init() {
-  await User.sync();
-  await Post.sync();
-  await Comment.sync();
-  await Like.sync();
+  await User.sync({ alter: true });
+  await Post.sync({ alter: true });
+  await Comment.sync({ alter: true });
+  await Like.sync({ alter: true });
 }
 
 init();

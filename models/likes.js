@@ -3,10 +3,6 @@ let dbConnect = require("../dbConnect");
 
 const sequelizeInstance = dbConnect.Sequelize;
 
-// Import models after Sequelize instance is initialized
-const User = require("./user");
-const Post = require("./posts");
-
 class Like extends Model {}
 
 Like.init(
@@ -38,9 +34,5 @@ Like.init(
     freezeTableName: true, // Prevents Sequelize from pluralizing table name
   }
 );
-
-// Establish relationships after model initialization
-Like.belongsTo(User, { foreignKey: "userId" }); // Like belongs to User
-Like.belongsTo(Post, { foreignKey: "postId" }); // Like belongs to Post
 
 module.exports = Like;
