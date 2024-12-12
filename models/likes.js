@@ -21,6 +21,10 @@ Like.init(
       type: DataTypes.INTEGER,
       allowNull: false, // Makes userId required
     },
+    // liked: {
+    //   type: DataTypes.BOOLEAN,
+    //   allowNull: false, // Makes userId required
+    // },
     createdAt: {
       type: DataTypes.DATE,
       allowNull: false,

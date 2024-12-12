@@ -49,10 +49,36 @@ const deletePost = (req, res) => {
       res.send({ result: 500, error: err.message });
     });
 };
+
+const joinLeft = (req, res) => {
+  Models.Post.findAll({
+    include: [
+      {
+        model: Task, // will create a left join
+      },
+    ],
+  })
+    .then((data) => {
+      res.send({ result: 200, data: data });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.send({ result: 500, error: err.message });
+    });
+};
+
+// User.findAll({
+//   include: [
+//     {
+//       model: Task, // will create a left join
+//     },
+//   ],
+// });
 module.exports = {
   getPosts,
   createPost,
   updatePost,
   deletePost,
+  joinLeft,
 };
 // ++ Test updating and deleting a Post using Postman
