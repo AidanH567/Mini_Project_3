@@ -13,6 +13,10 @@ router.post("/create", (req, res) => {
   Controllers.userController.createUser(req.body, res);
 });
 
+router.post("/init", (req, res) => {
+  Controllers.initController.storeInfo(res);
+});
+
 // matches PUT requests to /api/users/123 (stores 123 in id param)
 router.put("/:id", (req, res) => {
   Controllers.userController.updateUser(req, res);

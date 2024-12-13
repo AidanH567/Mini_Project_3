@@ -3,4 +3,5 @@ module.exports = {
   postController: require("./postController"),
   commentsController: require("./commentsController"), // Import the comment controller
   likeController: require("./likeController"), // Import the like controller
+  initController: require("./initController"), // Import the like controller
 };

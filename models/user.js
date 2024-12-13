@@ -24,7 +24,7 @@ User.init(
     },
     userName: {
       type: DataTypes.STRING,
-      allowNull: false, // Ensures last name is required
+      allowNull: false,
       unique: true,
     },
     emailId: {

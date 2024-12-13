@@ -1,0 +1,570 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "userName": "alicej",
+      "emailId": "alice.johnson@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "userName": "bobsmith",
+      "emailId": "bob.smith@example.com",
+      "password": "securepass"
+    },
+    {
+      "id": 3,
+      "firstName": "Charlie",
+      "lastName": "Brown",
+      "userName": "charlieb",
+      "emailId": "charlie.brown@example.com",
+      "password": "brownie123"
+    },
+    {
+      "id": 4,
+      "firstName": "Diana",
+      "lastName": "Prince",
+      "userName": "dianap",
+      "emailId": "diana.prince@example.com",
+      "password": "wonderwoman"
+    },
+    {
+      "id": 5,
+      "firstName": "Ethan",
+      "lastName": "Hunt",
+      "userName": "ethanh",
+      "emailId": "ethan.hunt@example.com",
+      "password": "missionpass"
+    },
+    {
+      "id": 6,
+      "firstName": "Fiona",
+      "lastName": "Carter",
+      "userName": "fionac",
+      "emailId": "fiona.carter@example.com",
+      "password": "fiocarter123"
+    },
+    {
+      "id": 7,
+      "firstName": "George",
+      "lastName": "Miller",
+      "userName": "georgem",
+      "emailId": "george.miller@example.com",
+      "password": "georgey789"
+    },
+    {
+      "id": 8,
+      "firstName": "Hannah",
+      "lastName": "Williams",
+      "userName": "hannahw",
+      "emailId": "hannah.williams@example.com",
+      "password": "hanwill456"
+    },
+    {
+      "id": 9,
+      "firstName": "Ian",
+      "lastName": "Taylor",
+      "userName": "iantaylor",
+      "emailId": "ian.taylor@example.com",
+      "password": "taylorian"
+    },
+    {
+      "id": 10,
+      "firstName": "Julia",
+      "lastName": "Roberts",
+      "userName": "juliar",
+      "emailId": "julia.roberts@example.com",
+      "password": "juliaroberts"
+    },
+    {
+      "id": 11,
+      "firstName": "Kevin",
+      "lastName": "Brown",
+      "userName": "kevinb",
+      "emailId": "kevin.brown@example.com",
+      "password": "kevbrown123"
+    },
+    {
+      "id": 12,
+      "firstName": "Laura",
+      "lastName": "Adams",
+      "userName": "lauraa",
+      "emailId": "laura.adams@example.com",
+      "password": "adamslaura"
+    },
+    {
+      "id": 13,
+      "firstName": "Michael",
+      "lastName": "Clark",
+      "userName": "michaelc",
+      "emailId": "michael.clark@example.com",
+      "password": "clarkmike"
+    },
+    {
+      "id": 14,
+      "firstName": "Nina",
+      "lastName": "Evans",
+      "userName": "ninae",
+      "emailId": "nina.evans@example.com",
+      "password": "evansnina"
+    },
+    {
+      "id": 15,
+      "firstName": "Oliver",
+      "lastName": "Harris",
+      "userName": "oliverh",
+      "emailId": "oliver.harris@example.com",
+      "password": "harrisoliver"
+    },
+    {
+      "id": 16,
+      "firstName": "Paula",
+      "lastName": "Jones",
+      "userName": "paulaj",
+      "emailId": "paula.jones@example.com",
+      "password": "jonespaula"
+    },
+    {
+      "id": 17,
+      "firstName": "Quentin",
+      "lastName": "Tarantino",
+      "userName": "quentint",
+      "emailId": "quentin.t@example.com",
+      "password": "tarantinoqt"
+    },
+    {
+      "id": 18,
+      "firstName": "Rachel",
+      "lastName": "Green",
+      "userName": "rachelg",
+      "emailId": "rachel.green@example.com",
+      "password": "greenrachel"
+    },
+    {
+      "id": 19,
+      "firstName": "Steven",
+      "lastName": "Grant",
+      "userName": "steveng",
+      "emailId": "steven.grant@example.com",
+      "password": "grantsteven"
+    },
+    {
+      "id": 20,
+      "firstName": "Tina",
+      "lastName": "Bell",
+      "userName": "tinab",
+      "emailId": "tina.bell@example.com",
+      "password": "belltina123"
+    }
+  ],
+  "posts": [
+    {
+      "title": "Exploring JavaScript Basics",
+      "description": "An introductory guide to JavaScript programming for beginners.",
+      "image": "js_basics.png",
+      "userId": 1,
+      "likeCount": 15
+    },
+    {
+      "title": "Understanding React Components",
+      "description": "Deep dive into the structure and lifecycle of React components.",
+      "image": "react_components.png",
+      "userId": 2,
+      "likeCount": 20
+    },
+    {
+      "title": "CSS Flexbox Guide",
+      "description": "A comprehensive guide to mastering CSS Flexbox layout.",
+      "image": "css_flexbox.png",
+      "userId": 3,
+      "likeCount": 8
+    },
+    {
+      "title": "Node.js for Backend Development",
+      "description": "Learn how to use Node.js to build scalable backend applications.",
+      "image": "node_backend.png",
+      "userId": 4,
+      "likeCount": 12
+    },
+    {
+      "title": "Modern Database Management",
+      "description": "An overview of modern databases and best practices.",
+      "image": "database_management.png",
+      "userId": 5,
+      "likeCount": 25
+    },
+    {
+      "title": "TypeScript Essentials",
+      "description": "The essentials of TypeScript and why it’s useful for JavaScript developers.",
+      "image": "typescript_essentials.png",
+      "userId": 6,
+      "likeCount": 18
+    },
+    {
+      "title": "Building APIs with Express",
+      "description": "How to create RESTful APIs using Express.js.",
+      "image": "express_api.png",
+      "userId": 7,
+      "likeCount": 22
+    },
+    {
+      "title": "Mastering Git and GitHub",
+      "description": "Learn Git commands and how to manage projects with GitHub.",
+      "image": "git_github.png",
+      "userId": 8,
+      "likeCount": 30
+    },
+    {
+      "title": "Responsive Web Design",
+      "description": "Techniques for creating websites that look great on any device.",
+      "image": "responsive_web.png",
+      "userId": 9,
+      "likeCount": 14
+    },
+    {
+      "title": "Django for Web Developers",
+      "description": "Getting started with Django to build robust web applications.",
+      "image": "django_web.png",
+      "userId": 10,
+      "likeCount": 11
+    },
+    {
+      "title": "Introduction to DevOps",
+      "description": "Understanding the basics of DevOps and CI/CD pipelines.",
+      "image": "devops_intro.png",
+      "userId": 11,
+      "likeCount": 9
+    },
+    {
+      "title": "Java Fundamentals",
+      "description": "An introductory guide to Java programming for beginners.",
+      "image": "java_fundamentals.png",
+      "userId": 12,
+      "likeCount": 17
+    },
+    {
+      "title": "Python for Data Science",
+      "description": "Learn how Python is used in data science and machine learning.",
+      "image": "python_datascience.png",
+      "userId": 13,
+      "likeCount": 23
+    },
+    {
+      "title": "Kubernetes Simplified",
+      "description": "Introduction to Kubernetes and container orchestration.",
+      "image": "kubernetes_simplified.png",
+      "userId": 14,
+      "likeCount": 16
+    },
+    {
+      "title": "RESTful API Design",
+      "description": "Best practices for designing efficient RESTful APIs.",
+      "image": "restful_api.png",
+      "userId": 15,
+      "likeCount": 19
+    },
+    {
+      "title": "Learning Angular",
+      "description": "A beginner's guide to Angular framework for building web apps.",
+      "image": "angular_learning.png",
+      "userId": 16,
+      "likeCount": 10
+    },
+    {
+      "title": "Advanced CSS Techniques",
+      "description": "Learn advanced techniques to style modern web applications.",
+      "image": "advanced_css.png",
+      "userId": 17,
+      "likeCount": 13
+    },
+    {
+      "title": "Introduction to AI and ML",
+      "description": "Overview of artificial intelligence and machine learning concepts.",
+      "image": "ai_ml_intro.png",
+      "userId": 18,
+      "likeCount": 28
+    },
+    {
+      "title": "Secure Web Applications",
+      "description": "How to make your web applications more secure against attacks.",
+      "image": "secure_web.png",
+      "userId": 19,
+      "likeCount": 21
+    },
+    {
+      "title": "Introduction to Blockchain",
+      "description": "Basics of blockchain technology and its applications.",
+      "image": "blockchain_intro.png",
+      "userId": 20,
+      "likeCount": 26
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "content": "Great introduction to JavaScript! Very helpful.",
+      "createdAt": "2024-12-13T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "userId": 3,
+      "content": "I love the examples provided in this post.",
+      "createdAt": "2024-12-13T11:15:00Z"
+    },
+    {
+      "id": 3,
+      "postId": 2,
+      "userId": 1,
+      "content": "React components are my favorite part of React.",
+      "createdAt": "2024-12-13T12:00:00Z"
+    },
+    {
+      "id": 4,
+      "postId": 3,
+      "userId": 5,
+      "content": "Flexbox is such a game-changer for layouts.",
+      "createdAt": "2024-12-13T12:45:00Z"
+    },
+    {
+      "id": 5,
+      "postId": 4,
+      "userId": 6,
+      "content": "Clear and concise explanation about Node.js!",
+      "createdAt": "2024-12-13T13:30:00Z"
+    },
+    {
+      "id": 6,
+      "postId": 5,
+      "userId": 7,
+      "content": "Database management has never been easier to understand.",
+      "createdAt": "2024-12-13T14:15:00Z"
+    },
+    {
+      "id": 7,
+      "postId": 6,
+      "userId": 8,
+      "content": "TypeScript really helps with debugging code!",
+      "createdAt": "2024-12-13T15:00:00Z"
+    },
+    {
+      "id": 8,
+      "postId": 7,
+      "userId": 9,
+      "content": "This made learning Express much more approachable.",
+      "createdAt": "2024-12-13T15:45:00Z"
+    },
+    {
+      "id": 9,
+      "postId": 8,
+      "userId": 10,
+      "content": "Finally understand Git and GitHub! Thank you.",
+      "createdAt": "2024-12-13T16:30:00Z"
+    },
+    {
+      "id": 10,
+      "postId": 9,
+      "userId": 11,
+      "content": "Responsive design is key in 2024!",
+      "createdAt": "2024-12-13T17:15:00Z"
+    },
+    {
+      "id": 11,
+      "postId": 10,
+      "userId": 12,
+      "content": "I didn’t know Django could be so powerful!",
+      "createdAt": "2024-12-13T18:00:00Z"
+    },
+    {
+      "id": 12,
+      "postId": 11,
+      "userId": 13,
+      "content": "DevOps concepts are so well explained here.",
+      "createdAt": "2024-12-13T18:45:00Z"
+    },
+    {
+      "id": 13,
+      "postId": 12,
+      "userId": 14,
+      "content": "Java is finally making sense to me!",
+      "createdAt": "2024-12-13T19:30:00Z"
+    },
+    {
+      "id": 14,
+      "postId": 13,
+      "userId": 15,
+      "content": "Python is such a versatile language for data science.",
+      "createdAt": "2024-12-13T20:15:00Z"
+    },
+    {
+      "id": 15,
+      "postId": 14,
+      "userId": 16,
+      "content": "Kubernetes is finally making sense, thanks to this post.",
+      "createdAt": "2024-12-13T21:00:00Z"
+    },
+    {
+      "id": 16,
+      "postId": 15,
+      "userId": 17,
+      "content": "RESTful APIs made simple and elegant!",
+      "createdAt": "2024-12-13T21:45:00Z"
+    },
+    {
+      "id": 17,
+      "postId": 16,
+      "userId": 18,
+      "content": "Angular might just be my next go-to framework!",
+      "createdAt": "2024-12-13T22:30:00Z"
+    },
+    {
+      "id": 18,
+      "postId": 17,
+      "userId": 19,
+      "content": "Advanced CSS techniques are so useful for modern web design.",
+      "createdAt": "2024-12-13T23:15:00Z"
+    },
+    {
+      "id": 19,
+      "postId": 18,
+      "userId": 20,
+      "content": "AI and ML concepts explained so well!",
+      "createdAt": "2024-12-14T00:00:00Z"
+    },
+    {
+      "id": 20,
+      "postId": 19,
+      "userId": 1,
+      "content": "Security is a must-have skillset for web developers!",
+      "createdAt": "2024-12-14T00:45:00Z"
+    }
+  ],
+  "likes": [
+    {
+      "likeId": 1,
+      "postId": 1,
+      "userId": 2,
+      "createdAt": "2024-12-13T10:30:00Z"
+    },
+    {
+      "likeId": 2,
+      "postId": 1,
+      "userId": 3,
+      "createdAt": "2024-12-13T11:15:00Z"
+    },
+    {
+      "likeId": 3,
+      "postId": 2,
+      "userId": 1,
+      "createdAt": "2024-12-13T12:00:00Z"
+    },
+    {
+      "likeId": 4,
+      "postId": 3,
+      "userId": 5,
+      "createdAt": "2024-12-13T12:45:00Z"
+    },
+    {
+      "likeId": 5,
+      "postId": 4,
+      "userId": 6,
+      "createdAt": "2024-12-13T13:30:00Z"
+    },
+    {
+      "likeId": 6,
+      "postId": 5,
+      "userId": 7,
+      "createdAt": "2024-12-13T14:15:00Z"
+    },
+    {
+      "likeId": 7,
+      "postId": 6,
+      "userId": 8,
+      "createdAt": "2024-12-13T15:00:00Z"
+    },
+    {
+      "likeId": 8,
+      "postId": 7,
+      "userId": 9,
+      "createdAt": "2024-12-13T15:45:00Z"
+    },
+    {
+      "likeId": 9,
+      "postId": 8,
+      "userId": 10,
+      "createdAt": "2024-12-13T16:30:00Z"
+    },
+    {
+      "likeId": 10,
+      "postId": 9,
+      "userId": 11,
+      "createdAt": "2024-12-13T17:15:00Z"
+    },
+    {
+      "likeId": 11,
+      "postId": 10,
+      "userId": 12,
+      "createdAt": "2024-12-13T18:00:00Z"
+    },
+    {
+      "likeId": 12,
+      "postId": 11,
+      "userId": 13,
+      "createdAt": "2024-12-13T18:45:00Z"
+    },
+    {
+      "likeId": 13,
+      "postId": 12,
+      "userId": 14,
+      "createdAt": "2024-12-13T19:30:00Z"
+    },
+    {
+      "likeId": 14,
+      "postId": 13,
+      "userId": 15,
+      "createdAt": "2024-12-13T20:15:00Z"
+    },
+    {
+      "likeId": 15,
+      "postId": 14,
+      "userId": 16,
+      "createdAt": "2024-12-13T21:00:00Z"
+    },
+    {
+      "likeId": 16,
+      "postId": 15,
+      "userId": 17,
+      "createdAt": "2024-12-13T21:45:00Z"
+    },
+    {
+      "likeId": 17,
+      "postId": 16,
+      "userId": 18,
+      "createdAt": "2024-12-13T22:30:00Z"
+    },
+    {
+      "likeId": 18,
+      "postId": 17,
+      "userId": 19,
+      "createdAt": "2024-12-13T23:15:00Z"
+    },
+    {
+      "likeId": 19,
+      "postId": 18,
+      "userId": 20,
+      "createdAt": "2024-12-14T00:00:00Z"
+    },
+    {
+      "likeId": 20,
+      "postId": 19,
+      "userId": 1,
+      "createdAt": "2024-12-14T00:45:00Z"
+    }
+  ]
+}

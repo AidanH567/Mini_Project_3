@@ -13,10 +13,10 @@ router.post("/create", (req, res) => {
   Controllers.postController.createPost(req.body, res);
 });
 
-router.put("/join", (req, res) => {
-  //Joining Post with User
-  Controllers.postController.joinLeft(res);
-});
+// router.put("/join", (req, res) => {
+//   //Joining Post with User
+//   Controllers.postController.joinLeft(res);
+// });
 
 // matches PUT requests to /api/posts/123 (stores 123 in id param)
 router.put("/:id", (req, res) => {

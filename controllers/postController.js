@@ -50,22 +50,22 @@ const deletePost = (req, res) => {
     });
 };
 
-const joinLeft = (req, res) => {
-  Models.Post.findAll({
-    include: [
-      {
-        model: Task, // will create a left join
-      },
-    ],
-  })
-    .then((data) => {
-      res.send({ result: 200, data: data });
-    })
-    .catch((err) => {
-      console.log(err);
-      res.send({ result: 500, error: err.message });
-    });
-};
+// const joinLeft = (req, res) => {
+//   Models.Post.findAll({
+//     include: [
+//       {
+//         model: Task, // will create a left join
+//       },
+//     ],
+//   })
+//     .then((data) => {
+//       res.send({ result: 200, data: "success" });
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//       res.send({ result: 500, error: err.message });
+//     });
+// };
 
 // User.findAll({
 //   include: [
@@ -79,6 +79,6 @@ module.exports = {
   createPost,
   updatePost,
   deletePost,
-  joinLeft,
+  // joinLeft,
 };
 // ++ Test updating and deleting a Post using Postman
