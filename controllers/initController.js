@@ -12,6 +12,7 @@ const storeInfo = async (res) => {
     for (let user of data) {
       const [user, created] = await Models.User.findOrCreate({
         where: { userName: user.userName },
+        defaults: user,
       });
     }
     res.send("success");
